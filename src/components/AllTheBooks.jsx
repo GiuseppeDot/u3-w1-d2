@@ -7,7 +7,7 @@ class AlltheBooks extends Component {
     return horror.map((libro) => {
       return (
         <Col>
-          <Card key={libro.asin}>
+          <Card className="card-size" key={libro.asin}>
             <Card.Img className="w-100" variant="top" src={libro.img} />
             <Card.Body>
               <Card.Title>{libro.title}</Card.Title>
