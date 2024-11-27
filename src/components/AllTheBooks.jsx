@@ -6,8 +6,8 @@ class AlltheBooks extends Component {
   render() {
     return horror.map((libro) => {
       return (
-        <Col>
-          <Card className="card-size" key={libro.asin}>
+        <Col key={libro.asin}>
+          <Card className="card-size h-100">
             <Card.Img className="w-100" variant="top" src={libro.img} />
             <Card.Body>
               <Card.Title>{libro.title}</Card.Title>
