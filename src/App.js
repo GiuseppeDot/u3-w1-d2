@@ -4,6 +4,8 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Container, Row, Col } from "react-bootstrap";
 import AlltheBooks from "./components/AllTheBooks";
+import bookJson from "./assets/data/horror.json";
+import SingleBook from "./components/SingleBook";
 
 function App() {
   return (
@@ -12,11 +14,7 @@ function App() {
         <MyNav />
       </header>
       <main>
-        <Container>
-          <Row className="mt-5">
-            <AlltheBooks />
-          </Row>
-        </Container>
+        <AlltheBooks book={bookJson} />
       </main>
       <footer>
         <Container>

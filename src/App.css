@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: black;
 }
 
 .App-logo {
@@ -38,6 +39,9 @@
 }
 
 .card-size {
-  width: 10rem;
-  height: 30rem;
+  width: 15rem;
+}
+
+.selected {
+  border: 4px solid red !important;
 }
