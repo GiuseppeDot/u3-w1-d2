@@ -38,8 +38,8 @@ const AlltheBooks = function (props) {
         {props.book.map((bookObject, i) => {
           //bookObject è il singolo libro dentro horror
           return (
-            <Col xs={12} md={4} lg={3}>
-              <SingleBook key={i} book={bookObject} />
+            <Col key={i} xs={12} md={4} lg={3}>
+              <SingleBook book={bookObject} />
             </Col>
           );
         })}
