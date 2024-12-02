@@ -28,7 +28,7 @@ class SingleBook extends Component {
           />
           <Card.Body>
             <Card.Title>{this.props.book.title}</Card.Title>
-            <Card.Text>{this.props.book.price}</Card.Text>
+            <Card.Text> €{this.props.book.price} </Card.Text>
           </Card.Body>
         </Card>
         {/* <CommentArea asin={this.props.book.asin} /> */}

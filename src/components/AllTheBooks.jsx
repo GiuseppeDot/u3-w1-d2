@@ -28,23 +28,21 @@
 
 // export default AlltheBooks;
 
-import { Container, Row, Col } from "react-bootstrap";
+import { Col } from "react-bootstrap";
 import SingleBook from "./SingleBook";
 
 const AlltheBooks = function (props) {
   return (
-    <Container>
-      <Row>
-        {props.book.map((bookObject, i) => {
-          //bookObject è il singolo libro dentro horror
-          return (
-            <Col key={i} xs={12} md={4} lg={3}>
-              <SingleBook book={bookObject} />
-            </Col>
-          );
-        })}
-      </Row>
-    </Container>
+    <>
+      {props.book.map((bookObject, i) => {
+        //bookObject è il singolo libro dentro horror
+        return (
+          <Col key={i} xs={12} md={4} lg={3}>
+            <SingleBook book={bookObject} />
+          </Col>
+        );
+      })}
+    </>
   );
 };
 

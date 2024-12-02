@@ -11,16 +11,21 @@
 //     );
 //   }
 // }
-
-import { ListGroup } from "react-bootstrap";
+import React from "react";
 import SingleComment from "./SingleComment";
 
-const CommentList = ({ commentsToShow }) => (
-  <ListGroup style={{ color: "black" }} className="mt-2">
-    {commentsToShow.map((comment) => (
-      <SingleComment comment={comment} key={comment._id} />
-    ))}
-  </ListGroup>
-);
+const CommentList = ({ commentOfBooks }) => {
+  return (
+    <div>
+      {commentOfBooks.length > 0 ? (
+        commentOfBooks.map((comment, i) => {
+          <SingleComment key={i} comment={comment} />;
+        })
+      ) : (
+        <p>No comment</p>
+      )}
+    </div>
+  );
+};
 
 export default CommentList;

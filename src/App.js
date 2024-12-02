@@ -14,7 +14,11 @@ function App() {
         <MyNav />
       </header>
       <main>
-        <AlltheBooks book={bookJson} />
+        <Container>
+          <Row>
+            <AlltheBooks book={bookJson} />
+          </Row>
+        </Container>
       </main>
       <footer>
         <Container>
